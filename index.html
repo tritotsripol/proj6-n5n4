@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N5 and N4 kanjis list</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;700&display=swap" rel="stylesheet">
+  <meta property="og:image" content="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <script src="script.js" defer></script>
+  <style>
+    .Kanit {
+      font-family: 'Kanit', sans-serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body class="Kanit">
+  <section class="header">
+    <div><img src="favicon.png" width="75px" height="75px" alt="favicon"></div>
+    <div><h1 style="font-size: 50px; line-height: 1em">Trithod Site</h1></div>
+    <div class="home"><a href="https://tritotsripol.github.io/trithodhome/"><button data-en="Home" data-th="หน้าหลัก"></button></a></div>
+  </section>
+
+  <section class="web">
+
+    <h1 class="title-box" style="font-size: 50px;" data-en="N5 and N4 kanjis list" data-th="ตารางคันจิ N5 และ N4"></h1>
+    
+    <section class="grid">
+      <div class="download">
+        <a href="Kanji N.pdf" download>
+          <button data-en="Download PDF" data-th="ดาวน์โหลด PDF"></button>
+        </a>
+      </div>
+
+      <div class="origin">
+        <div data-en="Source: " data-th="แหล่งข้อมูล: "></div>
+        <a href="https://jlptsensei.com/jlpt-n5-kanji-list/">
+          https://jlptsensei.com/jlpt-n5-kanji-list/
+        </a><br>
+        <a href="https://jlptsensei.com/jlpt-n4-kanji-list/">
+          https://jlptsensei.com/jlpt-n4-kanji-list/
+        </a>
+      </div>
+    </section>
+
+    <iframe style="width: 100%; height: 90vh; border: none;" src="Kanji N.pdf#toolbar=1&navpanes=0&scrollbar=1"></iframe>
+
+    <section class="grid">
+      <div class="download">
+        <a href="kanji214radicals.pdf" download>
+          <button data-en="Download PDF" data-th="ดาวน์โหลด PDF"></button>
+        </a>
+      </div>
+      <div class="origin">
+        <div data-en="Source: " data-th="แหล่งข้อมูล: "></div>
+        <a href="https://jlptsensei.com/jlpt-n5-kanji-list/">
+          https://jlptsensei.com/jlpt-n5-kanji-list/
+        </a><br>
+        <a href="https://jlptsensei.com/jlpt-n4-kanji-list/">
+          https://jlptsensei.com/jlpt-n4-kanji-list/
+        </a>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="footer"
+    data-en="© 2025 Trithod Site. Made by Trithot Sripol."
+    data-th="© 2568 Trithod Site. จัดทำโดย ไตรทศ ศรีพล.">
+  </section>
+
+  <section class="buttons">
+    <!-- languagebtn -->
+    <div>
+      <select class="sectionbtn" id="option" name="option" onchange="changeLanguage(this.value)">
+        <option value="en">ENG</option>
+        <option value="th">ไทย</option>
+      </select>
+    </div>
+  
+      <!-- light theme -->
+      <div>
+        <button class="themebtn" id="theme-toggle">
+          <img class="themeicon" id="theme-icon" src="moon-icon.png" alt="Theme Icon" width="25" height="25">
+        </button>
+      </div>
+
+      <!-- ฺgo to top btn -->
+    <div>
+      <button class="gotop">
+      <img src="up-icon.png" width="25" height="25" class="uppy">
+      </button>
+    </div>
+  
+  </section>
+
+</body>
+</html>
